@@ -1,0 +1,29 @@
+{
+  "student": [
+    {
+      "id": "1",
+      "name": "Pradhumn",
+      "email": "vermapradhumn32@gamil.com"
+    },
+    {
+      "id": "2",
+      "name": "Saurabh Verma",
+      "email": "saurabh3@gmail.com"
+    },
+    {
+      "id": "51c2",
+      "name": "Omprakash ",
+      "email": "omprakash@gmail.com"
+    },
+    {
+      "id": "59c3",
+      "name": "Abneesh",
+      "email": "avneesh@gmail.com"
+    },
+    {
+      "id": "9375",
+      "name": "Saurabh Verma1",
+      "email": "vermasaurabh@gmail.com"
+    }
+  ]
+}
