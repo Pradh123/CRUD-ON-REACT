@@ -63,7 +63,7 @@ const Next =()=>{
   </div>)}
   <div className='flex justify-center'>
     {currentPage>1?<NavLink className='bg-slate-400 rounded-s px-2 cursor-pointer' onClick={Prev}>prev</NavLink>:null}
-    {numbers.map((n,i)=><NavLink className={`bg-orange-300 border border-solid px-2 cursor-pointer ${currentPage===n&& 'active'?'bg-lime-700':''}`} onClick={()=>ChangeN(n)}>{n}</NavLink>)}
+    {numbers.map((n,i)=><NavLink className={`bg-orange-300 border border-solid px-2 cursor-pointer ${currentPage===n && 'active'?'bg-lime-700':''}`} onClick={()=>ChangeN(n)}>{n}</NavLink>)}
     {currentPage<npage?<NavLink className='bg-slate-400 rounded-e px-2 cursor-pointer' onClick={Next}>next</NavLink>:null}
   </div>
    </>
