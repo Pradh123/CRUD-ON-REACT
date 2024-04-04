@@ -1,13 +1,8 @@
 {
   "student": [
     {
-      "id": "1",
-      "name": "Pradhumn",
-      "email": "vermapradhumn32@gamil.com"
-    },
-    {
       "id": "2",
-      "name": "Saurabh Verma",
+      "name": "Saurabh Verma1",
       "email": "saurabh3@gmail.com"
     },
     {
@@ -24,6 +19,31 @@
       "id": "9375",
       "name": "Saurabh Verma1",
       "email": "vermasaurabh@gmail.com"
+    },
+    {
+      "id": "1c68",
+      "name": "shyam Rajpoot",
+      "email": "shyam@gmail.com"
+    },
+    {
+      "id": "ef37",
+      "name": "Anubhav",
+      "email": "anubhav@gmail.com"
+    },
+    {
+      "id": "f11e",
+      "name": "Aditya",
+      "email": "aditya21@gmail.com"
+    },
+    {
+      "id": "cf7e",
+      "name": "Nehu",
+      "email": "nehu@gmail.com"
+    },
+    {
+      "id": "afc2",
+      "name": "Kishanpal",
+      "email": "kishanpal@gmail.com"
     }
   ]
 }
