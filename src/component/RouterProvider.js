@@ -22,7 +22,7 @@ const RouterProvider = ({children}) => {
             <Route path='signup' element={<SignUp/>}/>
             <Route path='update/:id' element={<ProtectedRoute Component={EditData }/>}/>
             <Route path='read/:id' element={<ProtectedRoute Component={ReadData}/>}/>
-            <Route path='*' element={<ErrorPage/>}/>
+            <Route path='*' element={<ProtectedRoute Component={ErrorPage}/>}/>
         </Route>
     </Routes>
     {children}
