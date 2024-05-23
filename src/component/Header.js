@@ -9,12 +9,12 @@ const Header = () => {
       <div className="w-5/6 flex items-center ">
         <h1 className=" font-bold text-2xl px-4">CRUD Operation</h1>
        
-          <NavLink to="/Home" className=" font-bold text-xl px-4">
+          <NavLink to="/Home" className=" font-bold text-xl px-4 hover:bg-red-600 hover:text-yellow-300 hover:rounded-lg">
             Home
           </NavLink>
       
         
-          <NavLink to="/create" className=" font-bold text-xl px-4">
+          <NavLink to="/create" className=" font-bold text-xl px-4 hover:bg-red-600 hover:text-yellow-300 hover:rounded-lg">
             Create Date
           </NavLink>
        
