@@ -3,14 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import RouterProvider from './component/RouterProvider';
-import ContextProvider from './context/UserContext';
 import StateContextProvider from './context/StateContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StateContextProvider>
-  <ContextProvider>
   <RouterProvider/>
-  </ContextProvider>
+  
   </StateContextProvider>
     
 );
