@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
 import axios from 'axios';
 import {  useNavigate, useParams } from 'react-router-dom';
+import DataApi from '../context/constant';
 
 function ReadData() {
   const [data, setData] = useState(null);
@@ -8,7 +9,7 @@ function ReadData() {
   const {id}=useParams();
   // all the data
    const loadData= async ()=>{
-      const data1= await axios.get(`http://localhost:3001/student/${id}`);
+      const data1= await axios.get(`${DataApi}student/${id}`);
       return data1;
    }
   useEffect(()=>{

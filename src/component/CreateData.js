@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import DataApi from '../context/constant';
 const CreateData = () => {
   const [data,setData]=useState({name:'',email:''});
   const navigate=useNavigate();
   const addData=(event)=>{
     event.preventDefault();
-    axios.post("http://localhost:3001/student",data).
+    axios.post(`${DataApi}student`,data).
     then(res=>navigate('/home'))
     
     

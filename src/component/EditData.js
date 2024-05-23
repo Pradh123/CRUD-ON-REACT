@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
+import DataApi from '../context/constant';
 
 const EditData = () => {
     const [data,setData]=useState({name:'',email:''});
@@ -9,7 +10,7 @@ const EditData = () => {
     // get data according to id
 
     const loadData= async ()=>{
-        const data1= await axios.get(`http://localhost:3001/student/${id}`);
+        const data1= await axios.get(`${DataApi}student/${id}`);
         return data1;
      }
     useEffect(()=>{
@@ -19,7 +20,7 @@ const EditData = () => {
 //udate the data
     const updateData=(event)=>{
         event.preventDefault();
-        axios.put(`http://localhost:3001/student/${id}`,data)
+        axios.put(`${DataApi}student/${id}`,data)
         .then(res=>navigate('/home'))
         .catch(err=>alert("query failed",err));
     }

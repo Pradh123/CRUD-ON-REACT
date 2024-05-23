@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { useContextStates } from '../context/StateContext';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import DataApi from '../context/constant';
 const Pagination = () => {
   const {pageData, setPageData}=useContextStates();
   const [currentPage,setCurrentPage]=useState(1);
@@ -14,7 +15,7 @@ const Pagination = () => {
   const Deletedata = (e,id)=>{
     const confirm1 =window.confirm("do you want do delete data item ?"); 
     if(confirm1){
-      axios.delete(`http://localhost:3001/student/${id}`)
+      axios.delete(`${DataApi}student/${id}`)
       .then(res=>{
       const deletedData=pageData.filter(item=>item.id!==id);
       setPageData(deletedData);

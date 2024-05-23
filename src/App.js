@@ -3,12 +3,13 @@ import axios from 'axios';
 import './App.css';
 import { useContextStates } from './context/StateContext';
 import Pagination from './component/Pagination';
+import DataApi from './context/constant';
 
 function App() {
   const {setPageData,pageData}=useContextStates();
   // all the data
    const loadData= async ()=>{
-      const data1= await axios.get("http://localhost:3001/student");
+      const data1= await axios.get(`${DataApi}student`);
       return data1;
    }
   useEffect(()=>{
